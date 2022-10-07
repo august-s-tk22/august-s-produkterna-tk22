@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+div {
+    justify-content: center;
+    display: flex;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 53, 53);
+    height: 80px;
+    margin: 20px;
+    align-items: center;
+}
+
+h3 {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.grad-red-yellow {
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(255, 255, 0));
+}
+  
