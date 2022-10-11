@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(rgb(51, 51, 51), rgb(72, 72, 72));
+    background-color: rgb(47, 47, 47);
 }
 
 div {
@@ -16,9 +16,12 @@ nav {
 }
 
 h3, h2 {
-    font-family: sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.shadow-text-icons{
+    text-shadow: rgb(108, 108, 108) 1px 0 10px;
+}
 .grad-red-yellow {
     background-image: linear-gradient(rgb(255, 0, 0), rgb(255, 255, 0));
 }
@@ -41,10 +44,49 @@ h3, h2 {
     width: 49%;
     height: 100px;
     margin-bottom: 2%;
-    background-image: linear-gradient(rgb(255, 200, 0), rgb(255, 98, 0));
+    background-image: linear-gradient(rgb(204, 203, 198), rgb(167, 167, 167));
     border-radius: 15px;
+    display: flex;
+    align-items: center;
   }
   
 .item:nth-child(3n) {
     width: 100%;
   }
+
+/* Here I learned about [data-msg] as well as other neat techniques from a YouTube tutorial showing how to create popups within your items.
+Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
+
+.vinyl-info {
+    margin-left: 20px;
+    background-image: url(https://www.freepngimg.com/save/88500-text-awesome-question-mark-font-symbol/980x980);
+}
+
+[data-msg] {
+    position: relative;
+    margin-left: 20px;
+}
+
+[data-msg]:focus:before, [data-msg]:hover::before {
+    position: absolute;
+    width: 100%;
+    min-width: 200px;
+    background-color: white;
+    padding: 20px;
+    content: attr(data-msg);
+    left: 50%;
+    transform: translate(-50%, -100%);
+    top: -20px;
+    border-radius: 15px;
+}
+
+[data-msg]:focus:after, [data-msg]:hover::after {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
