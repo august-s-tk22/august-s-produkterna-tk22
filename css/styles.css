@@ -21,36 +21,77 @@ h3, h2 {
 
 .shadow-text-icons {
     text-shadow: rgb(108, 108, 108) 1px 0 10px;
+    text-decoration-color: black;
 }
 
-.shadow-text-icons {
-    text-shadow: rgb(108, 108, 108) 1px 0 10px;
-}
 .grad-red {
     background-image: linear-gradient(rgb(120, 0, 0), rgb(150, 0, 0));
 }
 
-/* .header {
+.header {
     border: 2px;
     padding: 10px;
     border-style: solid;
     border-radius: 15px;
-    background-image: linear-gradient(Rgb(150, 0, 0), rgb(120, 0, 0));
-    text-shadow: rgb(95, 24, 24) 1px 0 10px;
-} */
-
-.header {
-    padding: 10px;
-    background-image: linear-gradient(Rgb(150, 0, 0), rgb(120, 0, 0));
+    background-image: linear-gradient(rgb(150, 0, 0), rgb(120, 0, 0));
     text-shadow: rgb(95, 24, 24) 1px 0 10px;
 }
+
+/* Code for dropdown menu: https://www.w3schools.com/css/css_dropdowns.asp */
+
+.dropdown-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(204, 203, 198), rgb(167, 167, 167));
+    border-color: black;
+    border-style: solid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.dropdown:hover .dropdown-button {
+    background-image: linear-gradient(rgb(226, 19, 19), rgb(194, 0, 0));
+    border: 100%;
+    border-radius: 100%;
+}
+
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-  }
+}
   
 .item {
     width: 49%;
@@ -61,12 +102,14 @@ h3, h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    border-color: black;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
 
-  
 .item:nth-child(3n) {
     width: 100%;
-  }
+}
 
 /* Here I learned about [data-msg] as well as other neat techniques from a YouTube tutorial showing how to create popups within your items.
 Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
@@ -74,16 +117,21 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
 .category-info {
     margin-left: 10px;
     padding: 0.1rem;
+    border: none;
+    color: black;
 }
 
 .category-info > img {
     height: 1rem;
     width: 1rem;
+    border: none;
+    color: transparent;
 }
 
 [data-msg] {
     position: relative;
     margin-left: 20px;
+    background-color: transparent;
 }
 
 [data-msg]:focus:before, [data-msg]:hover::before {
