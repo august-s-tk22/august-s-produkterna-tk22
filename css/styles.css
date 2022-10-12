@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(54, 54, 54);
 }
 
 div {
@@ -10,22 +10,39 @@ nav {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 53, 53);
-    height: 80px;
     margin-bottom: 20px;
     align-items: center;
+    border-style: solid;
 }
 
-h3, h2 {
+h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 160%;
+}
+
+h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 250%;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
 }
 
 .shadow-text-icons {
-    text-shadow: rgb(108, 108, 108) 1px 0 10px;
-    text-decoration-color: black;
+    text-shadow: rgba(0, 0, 0, 0.768) 1px 0 10px;
+    text-decoration-color: rgb(255, 255, 255);
+    color: white;
 }
 
-.grad-red {
+/*
+-------- HOMEPAGE HEADERS --------
+*/
+
+.nav-stereohut {
     background-image: linear-gradient(rgb(120, 0, 0), rgb(150, 0, 0));
+    height: 80px;
 }
 
 .header {
@@ -33,9 +50,22 @@ h3, h2 {
     padding: 10px;
     border-style: solid;
     border-radius: 15px;
+    background-image: linear-gradient(rgb(255, 49, 49), rgb(255, 30, 30));
+    text-shadow: rgb(95, 24, 24) 1px 0 10px;
+    margin: 20px;
+    height: 40px;
+}
+
+.popular-right-now {
+    padding: 1px;
+    border-style: solid;
     background-image: linear-gradient(rgb(150, 0, 0), rgb(120, 0, 0));
     text-shadow: rgb(95, 24, 24) 1px 0 10px;
 }
+
+/*
+-------- DROPDOWN BUTTON --------
+*/
 
 /* Code for dropdown menu: https://www.w3schools.com/css/css_dropdowns.asp */
 
@@ -73,10 +103,14 @@ h3, h2 {
 .dropdown:hover .dropdown-menu {
     display: block;
     border-radius: 10px;
-    background-image: linear-gradient(rgb(204, 203, 198), rgb(167, 167, 167));
+    background-image:url(https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-color: black;
     border-style: solid;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.768) 1px 0 10px;
 }
   
 .dropdown:hover .dropdown-button {
@@ -85,6 +119,9 @@ h3, h2 {
     border-radius: 100%;
 }
 
+/*
+-------- FLEXBOX CATEGORIES --------
+*/
 
 .container {
     display: flex;
@@ -92,7 +129,9 @@ h3, h2 {
     justify-content: space-between;
     margin-top: 20px;
 }
-  
+
+/* Note: All external images are taken from Unsplash, which is a royalty-free library, meaning they are free for use. */
+
 .item {
     width: 49%;
     height: 100px;
@@ -107,9 +146,98 @@ h3, h2 {
     border-color: rgb(0, 0, 0);
 }
 
+.item-vinyl {
+    width: 49%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-image:url(https://images.unsplash.com/photo-1526815456940-2c11653292a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.item-cd {
+    width: 49%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-image:url(https://images.unsplash.com/photo-1550221948-f5f570ed12f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.item-new-releases {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-image:url(https://images.unsplash.com/photo-1587731556938-38755b4803a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.item-genres {
+    width: 49%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-image:url(https://images.unsplash.com/photo-1623018035813-9cfb5b502e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.item-equipment {
+    width: 49%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-image:url(https://images.unsplash.com/photo-1587023705107-290e07a2355a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1782&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
 .item:nth-child(3n) {
     width: 100%;
 }
+
+/*
+-------- TOOLTIPS CATEGORIES --------
+*/
 
 /* Here I learned about [data-msg] as well as other neat techniques from a YouTube tutorial showing how to create popups within your items.
 Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
@@ -156,4 +284,27 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
     border-top: 20px solid white;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
+}
+
+/*
+-------- FLEXBOX "POPULAR RIGHT NOW" --------
+*/
+
+.container-2 {
+    display: flex;
+}
+  
+.item-2 {
+    flex-grow: 1;
+    height: 175px;
+    background-image: linear-gradient(rgb(204, 203, 198), rgb(167, 167, 167));
+    margin-inline: px;
+    border: 2px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 15px;
+}
+  
+.item-2 + .item-2 {
+    margin-left: 1%;
 }
