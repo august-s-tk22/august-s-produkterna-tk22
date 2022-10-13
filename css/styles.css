@@ -48,7 +48,7 @@ a:visited {
 .header {
     border: 2px;
     padding: 10px;
-    border-style: solid;
+    border-style:groove
     border-radius: 15px;
     background-image: linear-gradient(rgb(255, 49, 49), rgb(255, 30, 30));
     text-shadow: rgb(95, 24, 24) 1px 0 10px;
