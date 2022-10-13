@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(54, 54, 54);
+    background-image: linear-gradient(rgb(86, 86, 86), rgb(59, 59, 59));
 }
 
 div {
@@ -59,8 +59,10 @@ a:visited {
 .popular-right-now {
     padding: 1px;
     border-style: solid;
-    background-image: linear-gradient(rgb(150, 0, 0), rgb(120, 0, 0));
+    background-image: linear-gradient(rgb(255, 49, 49), rgb(255, 30, 30));
     text-shadow: rgb(95, 24, 24) 1px 0 10px;
+    margin-top: 50px;
+    margin-inline: 40px;
 }
 
 /*
@@ -91,6 +93,9 @@ a:visited {
   z-index: 1;
 }
 
+.dropdown-menu a:hover {
+    background-color: #5f5f5f37;
+}
 .dropdown-menu a {
     color: black;
     padding: 12px 16px;
@@ -123,14 +128,14 @@ a:visited {
 -------- FLEXBOX CATEGORIES --------
 */
 
+/* Note: All external images are taken from Unsplash, which is a royalty-free library, meaning they are free for use. */
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
 }
-
-/* Note: All external images are taken from Unsplash, which is a royalty-free library, meaning they are free for use. */
 
 .item {
     width: 49%;
@@ -284,27 +289,4 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
     border-top: 20px solid white;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-}
-
-/*
--------- FLEXBOX "POPULAR RIGHT NOW" --------
-*/
-
-.container-2 {
-    display: flex;
-}
-  
-.item-2 {
-    flex-grow: 1;
-    height: 175px;
-    background-image: linear-gradient(rgb(204, 203, 198), rgb(167, 167, 167));
-    margin-inline: px;
-    border: 2px;
-    padding: 10px;
-    border-style: solid;
-    border-radius: 15px;
-}
-  
-.item-2 + .item-2 {
-    margin-left: 1%;
 }
