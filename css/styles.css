@@ -53,6 +53,8 @@ a:visited {
     text-shadow: rgb(95, 24, 24) 1px 0 10px;
     margin: 20px;
     height: 40px;
+        justify-content: center;
+    display: flex;
 }
 
 .popular-right-now {
@@ -306,7 +308,6 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
     height: auto;
     margin-top: 35px;
     padding-bottom: 20px;
-    padding-top: 0px;
     padding-inline: 20px;
     border-style: solid;
     display: block;
@@ -359,8 +360,6 @@ input {
 
 .contacts-info {
     background-color: rgb(167, 167, 167);
-    width: fit-content;
-    height: auto;
 }
 
 .established-info {
