@@ -306,7 +306,7 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
     height: auto;
     margin-top: 35px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-inline: 20px;
     border-style: solid;
     display: block;
@@ -322,6 +322,8 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
 .text-contacts {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 120px;
+    text-align: center;
 }
 
 input {
@@ -332,18 +334,21 @@ input {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(73, 0, 0);
+    justify-content: center
+    background-color: rgba(73, 0, 0, 0);
     height: 300px;
+
 }
   
 .item-2 {
     flex-grow: 1;
     height: 230px;
-    width: 350px;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.343);
     margin-left: 2%;
     margin-right: 2%;
+    text-align: center;
+    display: block;
+    justify-content:
 }
   
 .item-2 + .item-2 {
@@ -351,8 +356,13 @@ input {
 }
 
 .payment-information {
-    margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.contacts-info {
+    background-color: rgb(167, 167, 167);
+    width: fit-content;
+    height: fit-content;
 }
 
 .established-info {
