@@ -334,10 +334,9 @@ input {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
     background-color: rgba(73, 0, 0, 0);
     height: 300px;
-
 }
   
 .item-2 {
@@ -348,7 +347,6 @@ input {
     margin-right: 2%;
     text-align: center;
     display: block;
-    justify-content:
 }
   
 .item-2 + .item-2 {
@@ -362,7 +360,7 @@ input {
 .contacts-info {
     background-color: rgb(167, 167, 167);
     width: fit-content;
-    height: fit-content;
+    height: auto;
 }
 
 .established-info {
