@@ -44,7 +44,7 @@ a:visited {
     border-style: solid;
 }
 
-.slogan-header {
+.header-slogan {
     border: 2px;
     padding: 10px;
     border-style:dashed;
@@ -53,17 +53,8 @@ a:visited {
     text-shadow: rgb(95, 24, 24) 1px 0 10px;
     margin: 20px;
     height: 40px;
-        justify-content: center;
+    justify-content: center;
     display: flex;
-}
-
-.popular-right-now {
-    padding: 1px;
-    border-style: solid;
-    background-image: linear-gradient(rgb(255, 49, 49), rgb(255, 30, 30));
-    text-shadow: rgb(95, 24, 24) 1px 0 10px;
-    margin-top: 50px;
-    margin-inline: 40px;
 }
 
 /*
@@ -131,14 +122,14 @@ a:visited {
 
 /* Note: All external images are taken from Unsplash, which is a royalty-free library, meaning they are free for use. */
 
-.container {
+.container-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.item {
+.item-buttons-universal {
     width: 49%;
     height: 100px;
     margin-bottom: 2%;
@@ -314,24 +305,24 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
     width: auto;
 }
 
-.text-contacts-header {
+.header-contacts {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 150%;
 }
 
 .text-contacts {
+    background-color: rgba(167, 167, 167, 0);
+    margin: -2rem;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 120px;
-    text-align: center;
 }
 
 input {
     height: 20px;
 }
 
-.container-2 {
+.container-contacts {
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -340,30 +331,28 @@ input {
     height: 300px;
 }
   
-.item-2 {
+.item-contacts {
     flex-grow: 1;
-    height: 230px;
-    background-color: rgba(127, 255, 212, 0.343);
+    height: 170px;
+    background-color: rgba(127, 255, 212, 0);
     margin-left: 2%;
     margin-right: 2%;
     text-align: center;
     display: block;
+    margin-top: -40px;
 }
   
-.item-2 + .item-2 {
+.item-contacts + .item-contacts {
     margin-left: 2%;
 }
 
 .payment-information {
     margin-bottom: 20px;
-}
-
-.contacts-info {
-    background-color: rgb(167, 167, 167);
+    margin-top: -30px;
 }
 
 .established-info {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 80%;
-}
+}       
