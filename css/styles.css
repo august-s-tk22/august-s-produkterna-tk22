@@ -18,6 +18,10 @@ h3 {
     font-size: 250%;
 }
 
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 a:visited { 
     text-decoration: none; 
     color: rgb(255, 255, 255); 
@@ -63,57 +67,40 @@ a:visited {
 
 /* Code for dropdown menu: https://www.w3schools.com/css/css_dropdowns.asp */
 
-.dropdown-button {
-    background-color: rgba(88, 0, 0, 0);
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+.container-dropdowns {
+    display: flex;
+    background-color: rgba(137, 43, 226, 0.382);
+    padding: 2px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.item-dropdown-menu {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.318);
+    margin-inline: 2px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-    left: -3.5rem;
-    bottom: -8.2rem;
+.item-dropdown-info {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.318);
+    margin-inline: 2px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
 }
 
-.dropdown-menu a:hover {
-    background-color: #5f5f5f37;
-}
-.dropdown-menu a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    border-radius: 10px;
-    background-image:url(https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-color: black;
-    border-style: solid;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: rgba(0, 0, 0, 0.768) 1px 0 10px;
-}
-  
-.dropdown:hover .dropdown-button {
-    background-image: linear-gradient(rgba(209, 0, 0, 0.854), rgba(207, 0, 0, 0.194), rgba(207, 0, 0, 0));
-    border: 100%;
-    border-radius: 100%;
+.item-dropdown-shopping-cart {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.318);
+    margin-inline: 2px; 
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
 }
 
 /*
