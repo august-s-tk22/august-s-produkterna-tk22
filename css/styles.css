@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(rgb(65, 65, 65), rgb(52, 52, 52));
+    background-image: linear-gradient(rgb(49, 49, 49), rgb(52, 52, 52));
 
 }
 
@@ -37,7 +37,7 @@ a:visited {
 */
 
 .nav-stereohut {
-    background-image: linear-gradient(rgb(120, 0, 0), rgb(150, 0, 0));
+    background-image: linear-gradient(rgb(255, 88, 66), rgb(255, 51, 51));
     height: 80px;
     align-items: center;
     justify-content: center;
@@ -47,17 +47,46 @@ a:visited {
     border-style: solid;
 }
 
-.header-slogan {
-    border: 2px;
-    padding: 10px;
-    border-style:dashed;
-    border-radius: 15px;
-    background-image: linear-gradient(rgb(255, 49, 49), rgb(255, 30, 30));
-    text-shadow: rgb(95, 24, 24) 1px 0 10px;
-    margin: 20px;
-    height: 40px;
+/*
+-------- WHAT'S NEW ---------
+*/
+
+.container-hellfire {
+    background-image:radial-gradient(rgb(230, 85, 169), rgb(255, 59, 111));
+    height: 200px;
+    width: 100%;
+    border-style: solid;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+.text-hellfire {
+    color: white;
+    align-content: center;
     justify-content: center;
     display: flex;
+}
+
+h4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+.item-hellfire {
+    width: 300px;
+    height: 180px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.item-hellfire-text {
+    width: 180px;
+    height: 180px;
+    margin-top: 8px;
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
 }
 
 /*
@@ -66,52 +95,7 @@ a:visited {
 
 /* Code for dropdown menu: https://www.w3schools.com/css/css_dropdowns.asp */
 
-.container-dropdowns {
-    display: flex;
-    background-color: rgb(80, 0, 0);
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
 
-.item-dropdown-menu {
-    width: 70px;
-    height: 40px;
-    background-color: rgba(255, 0, 0, 0.318);
-    margin-inline: 2px;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    border-style: solid;
-    border-color: rgb(164, 0, 0);
-}
-
-.item-dropdown-info {
-    width: 70px;
-    height: 40px;
-    background-color: rgba(255, 0, 0, 0.318);
-    margin-inline: 2px;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    border-style: solid;
-    border-color: rgb(164, 0, 0);
-}
-
-.item-dropdown-shopping-cart {
-    width: 70px;
-    height: 40px;
-    background-color: rgba(255, 0, 0, 0.318);
-    margin-inline: 2px; 
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    border-style: solid;
-    border-color: rgb(164, 0, 0);
-}
-
-.p-dropdown-text {
-    text-shadow: rgba(0, 0, 0, 0.19) 1px 0 10px;
-}
 
 /*
 -------- FLEXBOX CATEGORIES --------
