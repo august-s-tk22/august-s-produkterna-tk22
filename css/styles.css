@@ -95,7 +95,57 @@ h4 {
 
 /* Code for dropdown menu: https://www.w3schools.com/css/css_dropdowns.asp */
 
+.dropdown-button {
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    left: -3.5rem;
+    bottom: -8.2rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: #5f5f5f37;
+}
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: black;
+    border-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.768) 1px 0 10px;
+    text-decoration-color: white;
+}
+
+.dropdown-text {
+    color: white;
+}
+  
+.dropdown:hover .dropdown-button {
+    background-color: rgb(0, 0, 0);
+}
 
 /*
 -------- FLEXBOX CATEGORIES --------
