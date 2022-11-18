@@ -245,7 +245,7 @@ a:active {
     transition: ease-out 0.8s;
 }
 
-.item-new-releases {
+.item-genres {
     width: 100%;
     height: 100px;
     margin-bottom: 2%;
@@ -262,56 +262,10 @@ a:active {
     outline: none;
 }
 
-.item-new-releases:hover {
+.item-genres:hover {
     box-shadow: inset 1480px 0 0 0 rgb(255, 51, 51);
     color: rgb(0, 0, 0);
     transition: ease-out 1.5s;
-}
-
-.item-genres {
-    width: 49%;
-    height: 100px;
-    margin-bottom: 2%;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-color: black;
-    background-color: rgb(27, 27, 27);
-    box-shadow: inset 0 0 0 0 rgb(255, 51, 51);
-    transition: ease-out 1s;
-    font-size: 1.5rem;
-    outline: none;
-}
-
-.item-genres:hover {
-    box-shadow: inset 720px 0 0 0 rgb(255, 51, 51);
-    color: rgb(0, 0, 0);
-    transition: ease-out 0.8s;
-}
-
-.item-equipment {
-    width: 49%;
-    height: 100px;
-    margin-bottom: 2%;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-color: black;
-    background-color: rgb(27, 27, 27);
-    box-shadow: inset 0 0 0 0 rgb(255, 51, 51);
-    transition: ease-out 1s;
-    font-size: 1.5rem;
-    outline: none;
-}
-
-.item-equipment:hover {
-    box-shadow: inset 720px 0 0 0 rgb(255, 51, 51);
-    color: rgb(0, 0, 0);
-    transition: ease-out 0.8s;
 }
 
 .item:nth-child(3n) {
