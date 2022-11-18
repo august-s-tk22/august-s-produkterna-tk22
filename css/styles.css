@@ -58,7 +58,7 @@ a:active {
 }
 
 /*
--------- HOMEPAGE HEADERS --------
+--- HOMEPAGE HEADERS ---
 */
 
 .nav-stereohut {
@@ -80,10 +80,8 @@ a:active {
 }
 
 /*
--------- DROPDOWN BUTTON --------
+--- DROPDOWN BUTTON ---
 */
-
-/* Code for dropdown menu: https://www.w3schools.com/css/css_dropdowns.asp */
 
 .dropdown-button {
     background-color: rgba(203, 39, 39, 0);
@@ -109,6 +107,8 @@ a:active {
     bottom: -8.2rem;
 }
 
+/* Added some simple hover effects to the dropdown button. */
+
 .dropdown-menu a:hover {
     background-color: #5f5f5f37;
 }
@@ -120,6 +120,8 @@ a:active {
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Positioning the dropdown menu so it doesn't go off-screen. */
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -143,47 +145,85 @@ a:active {
 }
 
 /*
--------- IMAGE WHEEL ---------
+--- IMAGE WHEEL ---
 */
 
-.container-swiper {
-    background-color: rgb(27, 27, 27);
-    height: 40vh;
-    width: 100%;
-    border-style: solid;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/* Here lays some complicated stuff. I sincerely hope my commenting is comprihensible. */
+
+.container-wheel {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(27, 27, 27);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 10px;
 }
 
-.swiper {
-    width: 100%;
-    height: 275px;
+.wrapper .carousel {
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-.swiper-slide img {
-    width: 100%;
+.carousel img {
+    height:340px;
+    width:calc(100%/3);
+    object-fit: cover;
+    margin-left: 18px;
 }
 
-.swiper .swiper-button-prev {
-    color: rgb(255, 51, 51);
+.wrapper {
+    max-width: 100%;
+    position: relative;
 }
 
-.swiper .swiper-button-next {
-    color: rgb(255, 51, 51);
+/* Implementing buttons from the external script I linked in my HTML file. Put them in their correct places
+aswell as gave them function */
+
+.wrapper i {
+    background: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
 }
 
-.swiper .swiper-pagination-bullet-active {
-    background: rgb(255, 51, 51);
+.wrapper i:first-child {
+    left: -5px
+}
+
+.wrapper i:last-child {
+    right: -5px
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+/* This is just to make sure the website is also compatible with mobile/tablet devices. */
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width:calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width:100%;
+    }
 }
 
 /*
--------- FLEXBOX CATEGORIES --------
+--- FLEXBOX CATEGORIES --
 */
-
-/* Note: All external images are taken from Unsplash, which is a royalty-free library, meaning they are free for use. */
 
 .container-buttons {
     display: flex;
@@ -211,6 +251,8 @@ a:active {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    ^ Old code I used for the buttons before I scrapped the image background idea.
 */
 
 .item-vinyl {
@@ -290,9 +332,6 @@ a:active {
 -------- TOOLTIPS --------
 */
 
-/* Here I learned about [data-msg] as well as other neat techniques from a YouTube tutorial showing how to create popups within your items.
-Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
-
 .category-info {
     margin-left: 10px;
     padding: 0.1rem;
@@ -345,7 +384,7 @@ Link: https://www.youtube.com/watch?v=4g0wymuE2Kg&ab_channel=CodinginPublic */
 }
 
 /*
--------- CONTACT INFORMATION (FOOTER) --------
+--- CONTACT INFORMATION (FOOTER) ---
 */
 
 .div-footer {

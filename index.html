@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- Here I linked my JavaScript file aswell as the script I additionally used to help make the image wheel work. -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+
+    <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
+        site's crown and therefore should be easy to use. -->
 
     <nav class="nav-stereohut">
         <a href="/index.html"><img src="./img/stereohut-logo.png" class="logo"></a>
@@ -18,30 +25,28 @@
             </div>
         </div>
     </nav>
+    
+    <!-- Image wheel implemented with the help of JavaScript aswell as external script (linked above). -->
 
-    <!-- Code for the swiper is taken from this website:
-        https://swiperjs.com/get-started -->
+    <div class="container-wheel">
+        <div class="wrapper">
 
-    <div class="container-swiper">
-        <div class="swiper">
+            <i class="fa-solid  fa-angle-left"></i>
 
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/albums/hellfire.png"></div>
-                <div class="swiper-slide"><img src="/img/albums/by-the-time-i-get-to-phoenix.png"></div>
-                <div class="swiper-slide"><img src="/img/albums/mm-food.png"></div>
-                <div class="swiper-slide"><img src="/img/albums/the-college-dropout.png"></div>
-                <div class="swiper-slide"><img src="/img/albums/the-powers-that-b.png"></div>
+            <div class="carousel">
+                <img src="/img/albums/by-the-time-i-get-to-phoenix.png" alt="img">
+                <img src="/img/albums/hellfire.png" alt="img">
+                <img src="/img/albums/mm-food.png" alt="img">
+                <img src="/img/albums/the-college-dropout.png" alt="img">
+                <img src="/img/albums/the-powers-that-b.png" alt="img">
             </div>
+            
+            <i class="fa-solid  fa-angle-right"></i>
 
-            <div class="swiper-pagination"></div>
-          
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-          </div>
+        </div>
     </div>
 
+    <!-- Buttons that take you to different categories surrounding the products. -->
 
     <div class="container-buttons">
         <a href="/html/physical-copies.html" class="item-vinyl">
@@ -58,6 +63,8 @@
         </a>
     </div>
 
+    <!-- Footer. Inspiration taken from https://www.bengans.se/ -->
+    
     <div class="div-footer" name="footer" id="footer">
         <div class="container-footer">
 
@@ -106,24 +113,5 @@
             <h4>© STEREOHUT - 2022</h4>
         </div>
     </div>
-
-<!-- Here are the scripts necessary for integrating the swiper: --> 
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-<script>
-    const swiper = new Swiper('.swiper', {
-        loop: true,
-
-    pagination: {
-    el: '.swiper-pagination',
-    },
-
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
-});
-</script>
 </body>
 
