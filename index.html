@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
+
     <nav class="nav-stereohut">
         <a href="/index.html"><img src="./img/stereohut-logo.png" class="logo"></a>
 
@@ -17,7 +19,27 @@
         </div>
     </nav>
 
-    <div class="container-wheel">
+    <!-- Code for the swiper is taken from this website:
+        https://swiperjs.com/get-started -->
+
+    <div class="container-swiper">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/albums/hellfire.png"></div>
+                <div class="swiper-slide"><img src="/img/albums/by-the-time-i-get-to-phoenix.png"></div>
+                <div class="swiper-slide"><img src="/img/albums/mm-food.png"></div>
+                <div class="swiper-slide"><img src="/img/albums/the-college-dropout.png"></div>
+                <div class="swiper-slide"><img src="/img/albums/the-powers-that-b.png"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
     </div>
 
 
@@ -84,5 +106,24 @@
             <h4>© STEREOHUT - 2022</h4>
         </div>
     </div>
+
+<!-- Here are the scripts necessary for integrating the swiper: --> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+});
+</script>
 </body>
 
