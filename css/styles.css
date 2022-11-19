@@ -1,6 +1,5 @@
 body {
     background-image: linear-gradient(rgb(49, 49, 49), rgb(52, 52, 52));
-
 }
 
 div {
@@ -72,11 +71,27 @@ a:active {
     margin-bottom: 20px;
     border-style: solid;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .logo {
     height: 43px;
     width: 400px;
+}
+
+.div-new-and-exclusive {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(247, 71, 71), rgb(255, 107, 87));
+    width:fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    border-color: black;
+    border-style:dashed;
+    font-size: 10px;
+    bottom: 15px;
+    position: relative;
+    margin: auto;
 }
 
 /*
@@ -155,10 +170,11 @@ a:active {
     align-items: center;
     justify-content: center;
     background-color: rgb(27, 27, 27);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: -30px;
+    margin-bottom: 70px;
     padding: 0 10px;
     border-style: solid;
+    border-radius: 5px;
 }
 
 .wrapper .carousel {
@@ -176,36 +192,8 @@ a:active {
 }
 
 .wrapper {
-    max-width: 100%;
     position: relative;
-}
-
-/* Implementing buttons from the external script I linked in my HTML file. Put them in their correct places
-aswell as gave them function */
-
-.wrapper i {
-    background: white;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 50%;
-    transform:translateY(-50%);
-}
-
-.wrapper i:first-child {
-    left: -5px
-}
-
-.wrapper i:last-child {
-    right: -5px
-}
-
-.carousel img:first-child {
-    margin-left: 0px;
+    width: 100%;
 }
 
 /* This is just to make sure the website is also compatible with mobile/tablet devices. */
