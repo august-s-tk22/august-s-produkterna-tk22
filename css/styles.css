@@ -158,6 +158,7 @@ a:active {
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0 10px;
+    border-style: solid;
 }
 
 .wrapper .carousel {
@@ -275,7 +276,7 @@ aswell as gave them function */
 .item-vinyl:hover {
     box-shadow: inset 720px 0 0 0 rgb(255, 51, 51);
     color: rgb(0, 0, 0);
-    transition: ease-out 0.8s;
+    transition: ease-out 0.5s;
 }
 
 .item-cd {
@@ -298,7 +299,7 @@ aswell as gave them function */
 .item-cd:hover {
     box-shadow: inset 720px 0 0 0 rgb(255, 51, 51);
     color: rgb(0, 0, 0);
-    transition: ease-out 0.8s;
+    transition: ease-out 0.5s;
 }
 
 .item-genres {
@@ -321,7 +322,7 @@ aswell as gave them function */
 .item-genres:hover {
     box-shadow: inset 1480px 0 0 0 rgb(255, 51, 51);
     color: rgb(0, 0, 0);
-    transition: ease-out 1.5s;
+    transition: ease-out 1s;
 }
 
 .item:nth-child(3n) {
