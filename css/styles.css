@@ -81,7 +81,7 @@ a:active {
 
 .div-new-and-exclusive {
     color: rgb(0, 0, 0);
-    background-image: linear-gradient(rgb(247, 71, 71), rgb(255, 107, 87));
+    background-color: rgb(255, 51, 51);
     width:fit-content;
     padding-left: 20px;
     padding-right: 20px;
@@ -89,56 +89,62 @@ a:active {
     border-color: black;
     border-style:dashed;
     font-size: 10px;
-    bottom: 15px;
+    bottom: -10px;
     position: relative;
     margin: auto;
 }
 
 /*
---- DROPDOWN BUTTON ---
+--- DROPDOWN BUTTONS ---
 */
 
-.dropdown-button {
-    background-color: rgba(203, 39, 39, 0);
-    border-style: solid;
+.dropdown-info-button {
+    background-color: rgb(27, 27, 27);
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-style: solid;
 }
 
-.dropdown {
+.dropdown-info:hover .dropdown-info-button {
+    background-color: rgb(20, 20, 20);
+}
+
+.dropdown-info {
     position: absolute;
     display: inline-block;
     right: 20px;
 }
 
-.dropdown-menu {
+.dropdown-info-menu {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-    left: -6.4rem;
+    left: -7.15rem;
     bottom: -8.2rem;
+    z-index: 9;
 }
 
 /* Added some simple hover effects to the dropdown button. */
 
-.dropdown-menu a:hover {
+.dropdown-info-menu a:hover {
     background-color: #5f5f5f37;
 }
-.dropdown-menu a {
+
+.dropdown-info-menu a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-info-content a:hover {background-color: #f1f1f1}
 
 /* Positioning the dropdown menu so it doesn't go off-screen. */
 
-.dropdown:hover .dropdown-menu {
+.dropdown-info:hover .dropdown-info-menu {
     display: block;
     background-color: rgb(27, 27, 27);
     border-style: solid;
@@ -147,16 +153,75 @@ a:active {
     text-decoration-color: white;
 }
 
-.dropdown-text {
+.dropdown-info-text {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 120%;
     margin: 0px;
 }
-  
-.dropdown:hover .dropdown-button {
-    background-color: rgba(0, 0, 0, 0);
-    transform: scale(0.9);
+
+/* ------ */
+
+.dropdown-products-button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 27, 27);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 75%;
+    padding-top: -90px;
+    border-style: solid;
+    border-color: black;
+}
+
+.dropdown-products:hover .dropdown-products-button {
+    background-color: rgb(20, 20, 20);
+}
+
+.dropdown-products {
+    position: absolute;
+    display: inline-block;
+    right: 76px;
+}
+
+.dropdown-products-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    left: -4.55rem;
+    bottom: -8.2rem;
+    z-index: 8;
+}
+
+.dropdown-products-menu a:hover {
+    background-color: #5f5f5f37;
+}
+
+.dropdown-products-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-products-content a:hover {background-color: #f1f1f1}
+
+.dropdown-products:hover .dropdown-products-menu {
+    display: block;
+    background-color: rgb(27, 27, 27);
+    border-style: solid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.768) 1px 0 10px;
+    text-decoration-color: white;
+}
+
+.dropdown-products-text {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+    margin: 0px;
 }
 
 /*
@@ -170,7 +235,7 @@ a:active {
     align-items: center;
     justify-content: center;
     background-color: rgb(27, 27, 27);
-    margin-top: -30px;
+    margin-top: -10px;
     margin-bottom: 70px;
     padding: 0 10px;
     border-style: solid;
@@ -218,7 +283,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .item-buttons-universal {
@@ -290,7 +355,7 @@ a:active {
     transition: ease-out 0.5s;
 }
 
-.item-genres {
+.item-genres-page {
     width: 100%;
     height: 100px;
     margin-bottom: 2%;
@@ -307,7 +372,7 @@ a:active {
     outline: none;
 }
 
-.item-genres:hover {
+.item-genres-page:hover {
     box-shadow: inset 1480px 0 0 0 rgb(255, 51, 51);
     color: rgb(0, 0, 0);
     transition: ease-out 1s;
@@ -437,4 +502,58 @@ input {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 80%;
-}       
+}
+
+/*
+--- GENRES HOMEPAGE ---
+*/
+
+.container-genres {
+    background-color: rgb(27, 27, 27);
+    height: fit-content;
+    padding: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-genres {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: rgb(255, 51, 51);
+    border-style: solid;
+    color: white;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 125%;
+}
+
+.item-genres:nth-child(4) {
+    margin-bottom: 0px;
+}
+
+.a-genres {
+    width: 100%;
+}
+
+/*
+--- GENRE: HIP HOP ---
+*/
+
+.container-hip-hop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(27, 27, 27);
+  }
+  
+  .item-hip-hop {
+    width: 15%;
+    padding-bottom: 15%; /* Same as width, sets height */
+    margin-bottom: calc((100 - 15 * 3)/2); /* (100-32*3)/2 */
+    position: relative;
+    background-color: aquamarine;
+  }

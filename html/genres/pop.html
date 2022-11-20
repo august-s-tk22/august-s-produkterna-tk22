@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <head>
+
+     <!-- Here I linked my CSS and JavaScript files. -->
+
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+
+    <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
+        site's crown and therefore should be easy to use. -->
+
     <nav class="nav-stereohut">
         <a href="/index.html"><img src="/img/stereohut-logo.png" class="logo"></a>
 
-        <div class="dropdown">
-            <button class="dropdown-button"><img src="/img/menu-icon.png" width="35px"></button>
-            <div class ="dropdown-menu">
-                <a href="#footer"><h4 class="dropdown-text">Om oss</h4></a>
-                <a href="#footer"><h4 class="dropdown-text">Kontakta oss</h4></a>
-                <a href="#"><h4 class="dropdown-text">Dokumentation</h4></a>
+        <div class="dropdown-info">
+            <button class="dropdown-info-button"><img src="/img/menu-icon.png" width="35px"></button>
+            <div class ="dropdown-info-menu">
+                <a href="#footer"><h4 class="dropdown-info-text">Om oss</h4></a>
+                <a href="#footer"><h4 class="dropdown-info-text">Kontakta oss</h4></a>
+                <a href="#"><h4 class="dropdown-info-text">Dokumentation</h4></a>
             </div>
         </div>
-    </nav>
 
+        <div class="dropdown-products">
+            <button class="dropdown-products-button"><p><b>Produkter</b></p></button>
+            <div class ="dropdown-products-menu">
+                <a href="/html/vinyl.html"><h4 class="dropdown-products-text">Vinyl</h4></a>
+                <a href="/html/cd.html"><h4 class="dropdown-products-text">CD</h4></a>
+                <a href="/html/genres-main.html"><h4 class="dropdown-products-text">Genrer</h4></a>
+            </div>
+        </div>
+
+    </nav>
+    
     <div class="div-footer" name="footer" id="footer">
         <div class="container-footer">
 
@@ -36,7 +54,7 @@
                     Grundat i Stockholm 2022 av George <br>
                     Greep och Morgan Simonsson. <br> 
                     Vill du lära dig mer om oss? <br>
-                    Läs mer <u>här</u>.
+                    Läs mer <u><a href="/html/about.html">här</a></u>.
                 </h4>
             </div>
 
@@ -45,7 +63,7 @@
                 <h4 class="text-footer"><br><br>
                     Vill du bli medlem hos oss? <br>
                     Läs mer om olika erbjudanden <br>
-                    och prenumerationer <u>här</u>.
+                    och prenumerationer <u><a href="/html/about.html">här</a></u>.
                 </h4>
             </div>
             
@@ -66,4 +84,3 @@
         </div>
     </div>
 </body>
-
