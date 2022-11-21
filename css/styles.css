@@ -276,7 +276,7 @@ a:active {
 }
 
 /*
---- FLEXBOX CATEGORIES --
+--- VINYL, CD AND GENRES FLEXBOX ---
 */
 
 .container-buttons {
@@ -520,7 +520,7 @@ input {
 }
 
 .item-genres {
-    height: 120px;
+    height: 200px;
     width: 100%;
     margin-bottom: 30px;
     background-color: rgb(27, 27, 27);
@@ -530,8 +530,23 @@ input {
     border-radius: 5px;
     align-items: center;
     font-size: 125%;
+    column-gap: 20px;
     display: flex;
-    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.item-genres:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.title-genres {
+    width: 200px;
+}
+.subitem-genres {
+    display: flex;
+    width: 300px;
+    background-color: rgba(127, 255, 212, 0);
+    font-size: 80%;
 }
 
 .a-genres {
@@ -539,9 +554,10 @@ input {
 }
 
 .img-genres {
-    width: 100px;
-    height: 100px;
-    float: left;
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: white;
 }
 
 /*
