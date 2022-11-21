@@ -509,34 +509,39 @@ input {
 */
 
 .container-genres {
-    background-color: rgb(27, 27, 27);
+    background-color: rgba(22, 118, 202, 0);
     height: fit-content;
-    padding: 50px;
-    border-style: solid;
-    border-radius: 5px;
     display: flex;
+    width: 95%;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+    padding-top: 20px;
 }
 
 .item-genres {
     height: 120px;
     width: 100%;
-    margin-bottom: 50px;
-    background-color: rgb(255, 51, 51);
+    margin-bottom: 30px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-color: black;
     border-style: solid;
-    color: rgb(0, 0, 0);
     border-radius: 5px;
     align-items: center;
     font-size: 125%;
-}
-
-.item-genres:nth-child(4) {
-    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 .a-genres {
     width: 100%;
+}
+
+.img-genres {
+    width: 100px;
+    height: 100px;
+    float: left;
 }
 
 /*
