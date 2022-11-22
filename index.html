@@ -1,139 +1,174 @@
 <!DOCTYPE html>
 <head>
+  <!-- Here I linked my CSS and JavaScript files. -->
 
-     <!-- Here I linked my CSS and JavaScript files. -->
-
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="/javascript/slider.js" defer></script>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="/javascript/slider.js" defer></script>
 </head>
 
 <body>
-
-    <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
+  <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
         site's crown and therefore should be easy to use. -->
 
-    <nav class="nav-stereohut">
-        <a href="/index.html"><img src="./img/stereohut-logo.png" class="logo"></a>
+  <nav class="nav-stereohut">
+    <a href="/index.html"
+      ><img src="./img/stereohut-logo.png" class="logo"
+    /></a>
 
-        <div class="dropdown-info">
-            <button class="dropdown-info-button"><img src="/img/menu-icon.png" width="35px"></button>
-            <div class ="dropdown-info-menu">
-                <a href="#footer"><h4 class="dropdown-info-text">Om oss</h4></a>
-                <a href="#footer"><h4 class="dropdown-info-text">Kontakta oss</h4></a>
-                <a href="#"><h4 class="dropdown-info-text">Dokumentation</h4></a>
-            </div>
-        </div>
+    <div class="dropdown-info">
+      <button class="dropdown-info-button">
+        <img src="/img/menu-icon.png" width="35px" />
+      </button>
+      <div class="dropdown-info-menu">
+        <a href="#footer"><h4 class="dropdown-info-text">Om oss</h4></a>
+        <a href="#footer"><h4 class="dropdown-info-text">Kontakta oss</h4></a>
+        <a href="#"><h4 class="dropdown-info-text">Dokumentation</h4></a>
+      </div>
+    </div>
 
-        <div class="dropdown-products">
-            <button class="dropdown-products-button"><p><b>Produkter</b></p></button>
-            <div class ="dropdown-products-menu">
-                <a href="/html/vinyl.html"><h4 class="dropdown-products-text">Vinyl</h4></a>
-                <a href="/html/cd.html"><h4 class="dropdown-products-text">CD</h4></a>
-                <a href="/html/genres-main.html"><h4 class="dropdown-products-text">Genrer</h4></a>
-            </div>
-        </div>
+    <div class="dropdown-products">
+      <button class="dropdown-products-button">
+        <p><b>Produkter</b></p>
+      </button>
+      <div class="dropdown-products-menu">
+        <a href="/html/vinyl.html"
+          ><h4 class="dropdown-products-text">Vinyl</h4></a
+        >
+        <a href="/html/cd.html"><h4 class="dropdown-products-text">CD</h4></a>
+        <a href="/html/genres-main.html"
+          ><h4 class="dropdown-products-text">Genrer</h4></a
+        >
+      </div>
+    </div>
+  </nav>
 
-    </nav>
-    
-    <!-- Image wheel implemented with the help of JavaScript.
+  <!-- Image wheel implemented with the help of JavaScript.
     Code partially taken from here https://www.youtube.com/watch?v=7HPsdVQhpRw&ab_channel=CodingNepal -->
 
-    <div class="div-new-and-exclusive">
-        <h2><b>Nya och exklusiva skivor!</b></h2>
+  <div class="div-new-and-exclusive">
+    <h2><b>Nya och exklusiva skivor!</b></h2>
+  </div>
+
+  <div class="container-wheel">
+    <div class="wrapper">
+      <div class="carousel">
+        <!-- These images are off-screen. Prevents others from cutting off. -->
+
+        <img src="/img/albums/featured-albums/kid-a.png" alt="" />
+        <img src="/img/albums/featured-albums/igor.png" alt="" />
+
+        <!-- These images are off-screen. Prevents others from cutting off. -->
+
+        <img
+          src="/img/albums/featured-albums/by-the-time-i-get-to-phoenix.png"
+          alt="img"
+        />
+        <img src="/img/albums/featured-albums/hellfire.png" alt="img" />
+        <img src="/img/albums/featured-albums/mm-food.png" alt="img" />
+        <img
+          src="/img/albums/featured-albums/the-college-dropout.png"
+          alt="img"
+        />
+        <img
+          src="/img/albums/featured-albums/the-powers-that-b.png"
+          alt="img"
+        />
+        <img
+          src="/img/albums/featured-albums/mr-morale-and-the-big-steppers.png"
+          alt="img"
+        />
+        <img src="/img/albums/featured-albums/igor.png" alt="img" />
+        <img
+          src="/img/albums/featured-albums/by-the-time-i-get-to-phoenix.png"
+          alt="img"
+        />
+      </div>
     </div>
-    
-    <div class="container-wheel">
-        <div class="wrapper">
+  </div>
 
-            <div class="carousel">
+  <!-- Buttons that take you to different categories surrounding the products. -->
 
-                <!-- These images are off-screen. Prevents others from cutting off. -->
+  <div class="container-buttons">
+    <a href="/html/vinyl.html" class="item-vinyl">
+      <h2 class="text-shadow"><i>Vinyl</i></h2>
+      <button
+        class="category-info"
+        data-msg="Här kan du bläddra i vår samling av vinylkopior."
+      >
+        <img src="./img/question-mark-icon.png" />
+      </button>
+    </a>
+    <a href="/html/cd.html" class="item-cd">
+      <h2 class="text-shadow"><i>CD</i></h2>
+      <button
+        class="category-info"
+        data-msg="Här kan du bläddra i vår samling av CD-kopior."
+      >
+        <img src="./img/question-mark-icon.png" />
+      </button>
+    </a>
+    <a href="/html/genres-main.html" class="item-genres-page">
+      <h3 class="text-shadow"><i>Genrer</i></h3>
+      <button
+        class="category-info"
+        data-msg="Här kan du lista genom vårt bibliotek av både vinyl och CD-skivor kategoriserade efter deras genre."
+      >
+        <img src="./img/question-mark-icon.png" />
+      </button>
+    </a>
+  </div>
 
-                <img src="/img/albums/featured-albums/kid-a.png" alt="">
-                <img src="/img/albums/featured-albums/igor.png" alt="">
+  <!-- Footer. Inspiration taken from https://www.bengans.se/ -->
 
-                <!-- These images are off-screen. Prevents others from cutting off. -->
+  <div class="div-footer" name="footer" id="footer">
+    <div class="container-footer">
+      <div class="item-footer">
+        <h4 class="header-footer">Kontakt</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          <u>Telefon:</u> +46 751 793 336 <br />
+          <u>E-mail:</u> info@stereohut.se <br />
+          <u>Besöksadress:</u> Stereogatan 9 <br />
+          163 53 Solna
+        </h4>
+      </div>
 
-                <img src="/img/albums/featured-albums/by-the-time-i-get-to-phoenix.png" alt="img">
-                <img src="/img/albums/featured-albums/hellfire.png" alt="img">
-                <img src="/img/albums/featured-albums/mm-food.png" alt="img">
-                <img src="/img/albums/featured-albums/the-college-dropout.png" alt="img">
-                <img src="/img/albums/featured-albums/the-powers-that-b.png" alt="img">
-                <img src="/img/albums/featured-albums/mr-morale-and-the-big-steppers.png" alt="img">
-                <img src="/img/albums/featured-albums/igor.png" alt="img">
-                <img src="/img/albums/featured-albums/by-the-time-i-get-to-phoenix.png" alt="img">
+      <div class="item-footer">
+        <h4 class="header-footer">Om oss</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          Grundat i Stockholm 2022 av George <br />
+          Greep och Morgan Simonsson. <br />
+          Vill du lära dig mer om oss? <br />
+          Läs mer <u><a href="/html/about.html">här</a></u
+          >.
+        </h4>
+      </div>
 
-            </div>
+      <div class="item-footer">
+        <h4 class="header-footer">Bli medlem</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          Vill du bli medlem hos oss? <br />
+          Läs mer om olika erbjudanden <br />
+          och prenumerationer <u><a href="/html/about.html">här</a></u
+          >.
+        </h4>
+      </div>
 
-        </div>
+      <div class="item-footer">
+        <h4 class="header-footer">Nyhetsbrev</h4>
+        <input type="text" placeholder="E-mail" />
+        <button type="submit">Skicka</button>
+      </div>
     </div>
 
-    <!-- Buttons that take you to different categories surrounding the products. -->
-
-    <div class="container-buttons">
-        <a href="/html/vinyl.html" class="item-vinyl">
-            <h2 class="text-shadow"><i>Vinyl</i></h2>
-            <button class="category-info" data-msg="Här kan du bläddra i vår samling av vinylkopior."><img src="./img/question-mark-icon.png"></button>
-        </a>
-        <a href="/html/cd.html" class="item-cd">
-            <h2 class="text-shadow"><i>CD</i></h2>
-            <button class="category-info" data-msg="Här kan du bläddra i vår samling av CD-kopior."><img src="./img/question-mark-icon.png"></button>
-        </a>
-        <a href="/html/genres-main.html" class="item-genres-page">
-            <h3 class="text-shadow"><i>Genrer</i></h3>
-            <button class="category-info" data-msg="Här kan du lista genom vårt bibliotek av både vinyl och CD-skivor kategoriserade efter deras genre."><img src="./img/question-mark-icon.png"></button>
-        </a>
+    <div class="payment-information">
+      <img src="/img/payment-info.png" height="30px" />
     </div>
 
-    <!-- Footer. Inspiration taken from https://www.bengans.se/ -->
-    
-    <div class="div-footer" name="footer" id="footer">
-        <div class="container-footer">
-
-            <div class="item-footer">
-                <h4 class="header-footer">Kontakt</h4>
-                <h4 class="text-footer"><br><br>
-                    <u>Telefon:</u> +46 751 793 336 <br>
-                    <u>E-mail:</u> info@stereohut.se <br>
-                    <u>Besöksadress:</u> Stereogatan 9 <br>
-                    163 53 Solna
-                </h4>
-            </div>
-            
-            <div class="item-footer">
-                <h4 class="header-footer">Om oss</h4>
-                <h4 class="text-footer"><br><br>
-                    Grundat i Stockholm 2022 av George <br>
-                    Greep och Morgan Simonsson. <br> 
-                    Vill du lära dig mer om oss? <br>
-                    Läs mer <u><a href="/html/about.html">här</a></u>.
-                </h4>
-            </div>
-
-            <div class="item-footer">
-                <h4 class="header-footer">Bli medlem</h4>
-                <h4 class="text-footer"><br><br>
-                    Vill du bli medlem hos oss? <br>
-                    Läs mer om olika erbjudanden <br>
-                    och prenumerationer <u><a href="/html/about.html">här</a></u>.
-                </h4>
-            </div>
-            
-            <div class="item-footer">
-                <h4 class="header-footer">Nyhetsbrev</h4>
-                    <input type="text" placeholder="E-mail">
-                    <button type="submit">Skicka</button> 
-                </h4>
-            </div>
-        </div>
-
-        <div class="payment-information">
-            <img src="/img/payment-info.png" height="30px">
-        </div>
-
-        <div class="established-info">
-            <h4>© STEREOHUT - 2022</h4>
-        </div>
+    <div class="established-info">
+      <h4>© STEREOHUT - 2022</h4>
     </div>
+  </div>
 </body>
-
