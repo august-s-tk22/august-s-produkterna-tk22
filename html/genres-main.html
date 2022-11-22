@@ -1,128 +1,168 @@
 <!DOCTYPE html>
 <head>
+  <!-- Here I linked my CSS and JavaScript files. -->
 
-     <!-- Here I linked my CSS and JavaScript files. -->
-
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-
-    <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
+  <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
         site's crown and therefore should be easy to use. -->
 
-    <nav class="nav-stereohut">
-        <a href="/index.html"><img src="/img/stereohut-logo.png" class="logo"></a>
+  <nav class="nav-stereohut">
+    <a href="/index.html"
+      ><img src="/img/stereohut-logo.png" class="logo" />
+    </a>
 
-        <div class="dropdown-info">
-            <button class="dropdown-info-button"><img src="/img/menu-icon.png" width="35px"></button>
-            <div class ="dropdown-info-menu">
-                <a href="#footer"><h4 class="dropdown-info-text">Om oss</h4></a>
-                <a href="#footer"><h4 class="dropdown-info-text">Kontakta oss</h4></a>
-                <a href="#"><h4 class="dropdown-info-text">Dokumentation</h4></a>
-            </div>
-        </div>
-
-        <div class="dropdown-products">
-            <button class="dropdown-products-button"><p><b>Produkter</b></p></button>
-            <div class ="dropdown-products-menu">
-                <a href="/html/vinyl.html"><h4 class="dropdown-products-text">Vinyl</h4></a>
-                <a href="/html/cd.html"><h4 class="dropdown-products-text">CD</h4></a>
-                <a href="/html/genres-main.html"><h4 class="dropdown-products-text">Genrer</h4></a>
-            </div>
-        </div>
-
-    </nav>
-
-    <div class="container-genres">
-        <a href="/html/products/hip-hop.html" class="a-genres">
-            <div class="item-genres">
-                <img src="/img/albums/hip hop/madvillainy.jpeg" class="img-genres">
-                <div class="subitem-genres">
-                    <p>Efter upproret på 90-talet har det sedan dess blivit en av de mest anmärkningsvärda genrerna inom musiken idag. Här kan du bläddra igenom samlingen av hiphop-vinyler.</p>
-                </div>
-                <h2 class="title-genres"><i>Hip Hop</i></h2>
-            </div>
+    <div class="dropdown-info">
+      <button class="dropdown-info-button">
+        <img src="/img/menu-icon.png" width="35px" />
+      </button>
+      <div class="dropdown-info-menu">
+        <a href="#footer">
+          <h4 class="dropdown-info-text">Om oss</h4>
         </a>
-
-        <a href="/html/products/pop.html" class="a-genres">
-            <div class="item-genres">
-                <img src="/img/albums/pop/thriller.jpeg" class="img-genres">
-                <div class="subitem-genres">
-                    <p>Utan tvekan den mest erkända genren på senare tid - pop har fått sin kulturella efterföljd efter att ha anpassat och förändrat mer än någon annan genre. Här kan du bläddra igenom våra popvinyler.</p>
-                </div>
-                <h2 class="title-genres"><i>Pop</i></h2>
-            </div>
+        <a href="#footer">
+          <h4 class="dropdown-info-text">Kontakta oss</h4>
         </a>
-
-        <a href="/html/products/rock.html" class="a-genres">
-            <div class="item-genres">
-                <img src="/img/albums/rock/ok-computer.jpeg" class="img-genres">
-                <div class="subitem-genres">
-                    <p>När du tänker vinyl, tänker du rock. Ända sedan vinylens början har rockskivor varit framträdande i varje skivbutik. Här kan du bläddra igenom våra rockvinyler.</p>
-                </div>
-                <h2 class="title-genres"><i>Rock</i></h2>
-            </div>
+        <a href="#">
+          <h4 class="dropdown-info-text">Dokumentation</h4>
         </a>
-
-        <a href="/html/products/electronic.html" class="a-genres">
-            <div class="item-genres">
-                <img src="/img/albums/electronic/selected-ambient-works-85-92.jpeg" class="img-genres">
-                <div class="subitem-genres">
-                    <p>Även om det är en relativt ny genre för musikscenen, har elektronisk musik utan tvekan förändrat den för gott. Här kan du bläddra i vår samling av vinyler inom genren elektronisk musik.</p>
-                </div>
-                <h2><i>Elektroniskt</i></h2>
-            </div>
-        </a>
+      </div>
     </div>
 
-    <div class="div-footer" name="footer" id="footer">
-        <div class="container-footer">
-
-            <div class="item-footer">
-                <h4 class="header-footer">Kontakt</h4>
-                <h4 class="text-footer"><br><br>
-                    <u>Telefon:</u> +46 751 793 336 <br>
-                    <u>E-mail:</u> info@stereohut.se <br>
-                    <u>Besöksadress:</u> Stereogatan 9 <br>
-                    163 53 Solna
-                </h4>
-            </div>
-            
-            <div class="item-footer">
-                <h4 class="header-footer">Om oss</h4>
-                <h4 class="text-footer"><br><br>
-                    Grundat i Stockholm 2022 av George <br>
-                    Greep och Morgan Simonsson. <br> 
-                    Vill du lära dig mer om oss? <br>
-                    Läs mer <u><a href="/html/about.html">här</a></u>.
-                </h4>
-            </div>
-
-            <div class="item-footer">
-                <h4 class="header-footer">Bli medlem</h4>
-                <h4 class="text-footer"><br><br>
-                    Vill du bli medlem hos oss? <br>
-                    Läs mer om olika erbjudanden <br>
-                    och prenumerationer <u><a href="/html/about.html">här</a></u>.
-                </h4>
-            </div>
-            
-            <div class="item-footer">
-                <h4 class="header-footer">Nyhetsbrev</h4>
-                    <input type="text" placeholder="E-mail">
-                    <button type="submit">Skicka</button> 
-                </h4>
-            </div>
-        </div>
-
-        <div class="payment-information">
-            <img src="/img/payment-info.png" height="30px">
-        </div>
-
-        <div class="established-info">
-            <h4>© STEREOHUT - 2022</h4>
-        </div>
+    <div class="dropdown-products">
+      <button class="dropdown-products-button">
+        <p><b>Produkter</b></p>
+      </button>
+      <div class="dropdown-products-menu">
+        <a href="/html/products/hip-hop.html">
+          <h4 class="dropdown-products-text">Hip Hop</h4>
+        </a>
+        <a href="/html/products/pop.html">
+          <h4 class="dropdown-products-text">Pop</h4>
+        </a>
+        <a href="/html/products/rock.html">
+          <h4 class="dropdown-products-text">Rock</h4>
+        </a>
+        <a href="/html/products/electronic.html">
+          <h4 class="dropdown-products-text">Elektroniskt</h4>
+        </a>
+      </div>
     </div>
+  </nav>
+
+  <div class="container-genres">
+    <a href="/html/products/hip-hop.html" class="a-genres">
+      <div class="item-genres">
+        <img src="/img/albums/hip hop/madvillainy.jpeg" class="img-genres" />
+        <div class="subitem-genres">
+          <p>
+            Efter upproret på 90-talet har det sedan dess blivit en av de mest
+            anmärkningsvärda genrerna inom musiken idag. Här kan du bläddra
+            igenom samlingen av hiphop-vinyler.
+          </p>
+        </div>
+        <h2 class="title-genres"><i>Hip Hop</i></h2>
+      </div>
+    </a>
+
+    <a href="/html/products/pop.html" class="a-genres">
+      <div class="item-genres">
+        <img src="/img/albums/pop/thriller.jpeg" class="img-genres" />
+        <div class="subitem-genres">
+          <p>
+            Utan tvekan den mest erkända genren på senare tid - pop har fått sin
+            kulturella efterföljd efter att ha anpassat och förändrat mer än
+            någon annan genre. Här kan du bläddra igenom våra popvinyler.
+          </p>
+        </div>
+        <h2 class="title-genres"><i>Pop</i></h2>
+      </div>
+    </a>
+
+    <a href="/html/products/rock.html" class="a-genres">
+      <div class="item-genres">
+        <img src="/img/albums/rock/ok-computer.jpeg" class="img-genres" />
+        <div class="subitem-genres">
+          <p>
+            När du tänker vinyl, tänker du rock. Ända sedan vinylens början har
+            rockskivor varit framträdande i varje skivbutik. Här kan du bläddra
+            igenom våra rockvinyler.
+          </p>
+        </div>
+        <h2 class="title-genres"><i>Rock</i></h2>
+      </div>
+    </a>
+
+    <a href="/html/products/electronic.html" class="a-genres">
+      <div class="item-genres">
+        <img
+          src="/img/albums/electronic/selected-ambient-works-85-92.jpeg"
+          class="img-genres"
+        />
+        <div class="subitem-genres">
+          <p>
+            Även om det är en relativt ny genre för musikscenen, har elektronisk
+            musik utan tvekan förändrat den för gott. Här kan du bläddra i vår
+            samling av vinyler inom genren elektronisk musik.
+          </p>
+        </div>
+        <h2><i>Elektroniskt</i></h2>
+      </div>
+    </a>
+  </div>
+
+  <div class="div-footer" name="footer" id="footer">
+    <div class="container-footer">
+      <div class="item-footer">
+        <h4 class="header-footer">Kontakt</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          <u>Telefon:</u> +46 751 793 336 <br />
+          <u>E-mail:</u> info@stereohut.se <br />
+          <u>Besöksadress:</u> Stereogatan 9 <br />
+          163 53 Solna
+        </h4>
+      </div>
+
+      <div class="item-footer">
+        <h4 class="header-footer">Om oss</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          Grundat i Stockholm 2022 av George <br />
+          Greep och Morgan Simonsson. <br />
+          Vill du lära dig mer om oss? <br />
+          Läs mer <u><a href="/html/about.html">här</a></u
+          >.
+        </h4>
+      </div>
+
+      <div class="item-footer">
+        <h4 class="header-footer">Bli medlem</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          Vill du bli medlem hos oss? <br />
+          Läs mer om olika erbjudanden <br />
+          och prenumerationer <u><a href="/html/about.html">här</a></u
+          >.
+        </h4>
+      </div>
+
+      <div class="item-footer">
+        <h4 class="header-footer">Nyhetsbrev</h4>
+        <input type="text" placeholder="E-mail" />
+        <button type="submit">Skicka</button>
+      </div>
+    </div>
+
+    <div class="payment-information">
+      <img src="/img/payment-info.png" height="30px" />
+    </div>
+
+    <div class="established-info">
+      <h4>© STEREOHUT - 2022</h4>
+    </div>
+  </div>
 </body>

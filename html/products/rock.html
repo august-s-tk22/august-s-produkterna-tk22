@@ -1,141 +1,171 @@
 <!DOCTYPE html>
 <head>
+  <!-- Here I linked my CSS and JavaScript files. -->
 
-     <!-- Here I linked my CSS and JavaScript files. -->
-
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-
-    <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
+  <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
         site's crown and therefore should be easy to use. -->
 
-    <nav class="nav-stereohut">
-        <a href="/index.html"><img src="/img/stereohut-logo.png" class="logo"></a>
+  <nav class="nav-stereohut">
+    <a href="/index.html"
+      ><img src="/img/stereohut-logo.png" class="logo" />
+    </a>
 
-        <div class="dropdown-info">
-            <button class="dropdown-info-button"><img src="/img/menu-icon.png" width="35px"></button>
-            <div class ="dropdown-info-menu">
-                <a href="#footer"><h4 class="dropdown-info-text">Om oss</h4></a>
-                <a href="#footer"><h4 class="dropdown-info-text">Kontakta oss</h4></a>
-                <a href="#"><h4 class="dropdown-info-text">Dokumentation</h4></a>
-            </div>
-        </div>
-
-        <div class="dropdown-products">
-            <button class="dropdown-products-button"><p><b>Produkter</b></p></button>
-            <div class ="dropdown-products-menu">
-                <a href="/html/vinyl.html"><h4 class="dropdown-products-text">Vinyl</h4></a>
-                <a href="/html/cd.html"><h4 class="dropdown-products-text">CD</h4></a>
-                <a href="/html/genres-main.html"><h4 class="dropdown-products-text">Genrer</h4></a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-products">
-        <div class="item-products">
-            <img src="/img/albums/rock/the-wall.jpeg" class="img-products"> 
-            <h4>Pink Floyd - The Wall (2LP) - <u>459 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/ok-computer.jpeg" class="img-products"> 
-            <h4>Radiohead - OK Computer (2LP) - <u>419 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/paranoid.jpeg" class="img-products"> 
-            <h4>Black Sabbath - Paranoid - <u>239 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/schlagenheim.jpeg" class="img-products"> 
-            <h4>black midi - Schlagenheim - <u>329 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/remain-in-light.jpeg" class="img-products"> 
-            <h4>Talking Heads - Remain In Light - <u>289 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/the-sound-of-perseverance.jpeg" class="img-products"> 
-            <h4>Death - The Sound of Perseverance (Story to Tell) (2LP) - <u>789 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/nevermind.jpg" class="img-products"> 
-            <h4>Nirvana - Nevermind - <u>239 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/master-of-puppets.jpeg" class="img-products"> 
-            <h4>Metallica - Master of Puppets - <u>359 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
-        
-        <div class="item-products">
-            <img src="/img/albums/rock/for-the-first-time.png" class="img-products"> 
-            <h4>Black Country, New Road - For the first <br> time - <u>269 kr</u></h4>
-            <button class="button-products">Lägg till i varukorg</button>
-        </div>
+    <div class="dropdown-info">
+      <button class="dropdown-info-button">
+        <img src="/img/menu-icon.png" width="35px" />
+      </button>
+      <div class="dropdown-info-menu">
+        <a href="#footer">
+          <h4 class="dropdown-info-text">Om oss</h4>
+        </a>
+        <a href="#footer">
+          <h4 class="dropdown-info-text">Kontakta oss</h4>
+        </a>
+        <a href="#">
+          <h4 class="dropdown-info-text">Dokumentation</h4>
+        </a>
+      </div>
     </div>
-    
-    <div class="div-footer" name="footer" id="footer">
-        <div class="container-footer">
 
-            <div class="item-footer">
-                <h4 class="header-footer">Kontakt</h4>
-                <h4 class="text-footer"><br><br>
-                    <u>Telefon:</u> +46 751 793 336 <br>
-                    <u>E-mail:</u> info@stereohut.se <br>
-                    <u>Besöksadress:</u> Stereogatan 9 <br>
-                    163 53 Solna
-                </h4>
-            </div>
-            
-            <div class="item-footer">
-                <h4 class="header-footer">Om oss</h4>
-                <h4 class="text-footer"><br><br>
-                    Grundat i Stockholm 2022 av George <br>
-                    Greep och Morgan Simonsson. <br> 
-                    Vill du lära dig mer om oss? <br>
-                    Läs mer <u><a href="/html/about.html">här</a></u>.
-                </h4>
-            </div>
-
-            <div class="item-footer">
-                <h4 class="header-footer">Bli medlem</h4>
-                <h4 class="text-footer"><br><br>
-                    Vill du bli medlem hos oss? <br>
-                    Läs mer om olika erbjudanden <br>
-                    och prenumerationer <u><a href="/html/info/about.html">här</a></u>.
-                </h4>
-            </div>
-            
-            <div class="item-footer">
-                <h4 class="header-footer">Nyhetsbrev</h4>
-                    <input type="text" placeholder="E-mail">
-                    <button type="submit">Skicka</button> 
-                </h4>
-            </div>
-        </div>
-
-        <div class="payment-information">
-            <img src="/img/payment-info.png" height="30px">
-        </div>
-
-        <div class="established-info">
-            <h4>© STEREOHUT - 2022</h4>
-        </div>
+    <div class="dropdown-products">
+      <button class="dropdown-products-button">
+        <p><b>Produkter</b></p>
+      </button>
+      <div class="dropdown-products-menu">
+        <a href="/html/products/hip-hop.html">
+          <h4 class="dropdown-products-text">Hip Hop</h4>
+        </a>
+        <a href="/html/products/pop.html">
+          <h4 class="dropdown-products-text">Pop</h4>
+        </a>
+        <a href="/html/products/rock.html">
+          <h4 class="dropdown-products-text">Rock</h4>
+        </a>
+        <a href="/html/products/electronic.html">
+          <h4 class="dropdown-products-text">Elektroniskt</h4>
+        </a>
+      </div>
     </div>
+  </nav>
+
+  <div class="container-products">
+    <div class="item-products">
+      <img src="/img/albums/rock/the-wall.jpeg" class="img-products" />
+      <h4>Pink Floyd - The Wall (2LP) - <u>459 kr</u></h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img src="/img/albums/rock/ok-computer.jpeg" class="img-products" />
+      <h4>Radiohead - OK Computer (2LP) - <u>419 kr</u></h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img src="/img/albums/rock/paranoid.jpeg" class="img-products" />
+      <h4>Black Sabbath - Paranoid - <u>239 kr</u></h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img src="/img/albums/rock/schlagenheim.jpeg" class="img-products" />
+      <h4>black midi - Schlagenheim - <u>329 kr</u></h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img src="/img/albums/rock/remain-in-light.jpeg" class="img-products" />
+      <h4>Talking Heads - Remain In Light - <u>289 kr</u></h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img
+        src="/img/albums/rock/the-sound-of-perseverance.jpeg"
+        class="img-products"
+      />
+      <h4>
+        Death - The Sound of Perseverance (Story to Tell) (2LP) - <u>789 kr</u>
+      </h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img src="/img/albums/rock/nevermind.jpg" class="img-products" />
+      <h4>Nirvana - Nevermind - <u>239 kr</u></h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img src="/img/albums/rock/master-of-puppets.jpeg" class="img-products" />
+      <h4>Metallica - Master of Puppets - <u>359 kr</u></h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+
+    <div class="item-products">
+      <img src="/img/albums/rock/for-the-first-time.png" class="img-products" />
+      <h4>
+        Black Country, New Road - For the first <br />
+        time - <u>269 kr</u>
+      </h4>
+      <button class="button-products">Lägg till i varukorg</button>
+    </div>
+  </div>
+
+  <div class="div-footer" name="footer" id="footer">
+    <div class="container-footer">
+      <div class="item-footer">
+        <h4 class="header-footer">Kontakt</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          <u>Telefon:</u> +46 751 793 336 <br />
+          <u>E-mail:</u> info@stereohut.se <br />
+          <u>Besöksadress:</u> Stereogatan 9 <br />
+          163 53 Solna
+        </h4>
+      </div>
+
+      <div class="item-footer">
+        <h4 class="header-footer">Om oss</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          Grundat i Stockholm 2022 av George <br />
+          Greep och Morgan Simonsson. <br />
+          Vill du lära dig mer om oss? <br />
+          Läs mer <u><a href="/html/about.html">här</a></u
+          >.
+        </h4>
+      </div>
+
+      <div class="item-footer">
+        <h4 class="header-footer">Bli medlem</h4>
+        <h4 class="text-footer">
+          <br /><br />
+          Vill du bli medlem hos oss? <br />
+          Läs mer om olika erbjudanden <br />
+          och prenumerationer <u><a href="/html/info/about.html">här</a></u
+          >.
+        </h4>
+      </div>
+
+      <div class="item-footer">
+        <h4 class="header-footer">Nyhetsbrev</h4>
+        <input type="text" placeholder="E-mail" />
+        <button type="submit">Skicka</button>
+      </div>
+    </div>
+
+    <div class="payment-information">
+      <img src="/img/payment-info.png" height="30px" />
+    </div>
+
+    <div class="established-info">
+      <h4>© STEREOHUT - 2022</h4>
+    </div>
+  </div>
 </body>
