@@ -47,7 +47,7 @@ a:active {
 }
 
 .text-shadow {
-  text-shadow: rgba(0, 0, 0, 0.443) 1px 0 10px;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 0 10px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -702,4 +702,91 @@ input {
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* 
+--- CONTACTS --- 
+*/
+
+.container-contacts {
+  display: flex;
+  background-color: rgb(27, 27, 27);
+  border-style: solid;
+  max-height: fit-content;
+  width: 75%;
+  padding: 25px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.item-contacts {
+  flex-grow: 1;
+  max-height:fit-content;
+  max-width: fit-content;
+  background-color: rgba(255, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.item-contacts + .item-contacts {
+  margin-left: 2%;
+}
+
+.container-contacts-img {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300px;
+  background-color: rgba(231, 169, 255, 0);
+  margin-bottom: 50px;
+}
+
+.item-contacts-img {
+  max-width: 400px;
+  max-height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.div-input-contacts {
+  height: fit-content;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(27, 27, 27);
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-color: black;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.input-contacts {
+  width: 95%;
+}
+
+.input-contacts-big {
+  width: 95%;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.button-contacts {
+  width: 100px;
+  height: 40px;
+  font-size: 120%;
+}
+
+.button-contacts:hover {
+  cursor: pointer;
+  background-color: rgb(218, 218, 218);
 }
