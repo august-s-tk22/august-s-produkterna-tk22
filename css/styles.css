@@ -329,6 +329,8 @@ I'm confident in saying that I have learnt how to create an image slider without
 
 /*
 [data-msg] is the popup that appears when hovering over the tooltip.
+Some of this is taken from web, but adjusted to make it work in my situation.
+Link unavailable due to me using numerous sources, however code wasn't directly copied.
 */
 
 
@@ -793,4 +795,23 @@ input {
 .button-contacts:hover {
   cursor: pointer;
   background-color: rgb(218, 218, 218);
+}
+
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+--- DOCUMENTATION ---
+*/
+
+.container-documentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-documentation {
+  height: 40px;
+  margin-bottom: 10px;
 }
