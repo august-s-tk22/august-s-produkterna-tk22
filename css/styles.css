@@ -26,6 +26,11 @@ h4 {
   font-size: 100%;
 }
 
+/*
+This is to remove text decoration from visited links (hyperlinks).
+If not, they appear as purple with an understroke, which ruins the layout of the page.
+ */
+
 a:link {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -74,21 +79,6 @@ a:active {
   width: 400px;
 }
 
-.div-new-and-exclusive {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 51, 51);
-  width: fit-content;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 50px;
-  border-color: black;
-  border-style: dashed;
-  font-size: 10px;
-  bottom: -10px;
-  position: relative;
-  margin: auto;
-}
-
 /*
 --- DROPDOWN BUTTONS ---
 */
@@ -122,7 +112,9 @@ a:active {
   z-index: 9;
 }
 
-/* Added some simple hover effects to the dropdown button. */
+/* 
+Added some simple hover effects to the dropdown button.
+*/
 
 .dropdown-info-menu a:hover {
   background-color: #5f5f5f37;
@@ -139,7 +131,9 @@ a:active {
   background-color: #f1f1f1;
 }
 
-/* Positioning the dropdown menu so it doesn't go off-screen. */
+/* 
+Positioning the dropdown menu so it doesn't go off-screen.
+ */
 
 .dropdown-info:hover .dropdown-info-menu {
   display: block;
@@ -158,7 +152,7 @@ a:active {
   margin: 0px;
 }
 
-/* ------ */
+/* ...  */
 
 .dropdown-products-button {
   color: rgb(255, 255, 255);
@@ -229,7 +223,26 @@ a:active {
 --- IMAGE WHEEL ---
 */
 
-/* Here lays some complicated stuff. I sincerely hope my commenting is comprihensible. */
+/* 
+Here lays some complicated stuff. 
+Some of the code is taken from CodingNepal, but it was more of a way for me to gain a deeper understanding of JavaScript.
+I'm confident in saying that I have learnt how to create an image slider without using a tutorial.
+*/
+
+.div-image-wheel {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 51, 51);
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  border-color: black;
+  border-style: dashed;
+  font-size: 10px;
+  bottom: -10px;
+  position: relative;
+  margin: auto;
+}
 
 .container-wheel {
   display: flex;
@@ -260,20 +273,6 @@ a:active {
 .wrapper {
   position: relative;
   width: 100%;
-}
-
-/* This is just to make sure the website is also compatible with mobile/tablet devices. */
-
-@media screen and (max-width: 900px) {
-  .carousel img {
-    width: calc(100% / 2);
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .carousel img {
-    width: 100%;
-  }
 }
 
 /*
@@ -311,7 +310,7 @@ a:active {
 }
 
 /*
--------- TOOLTIPS --------
+--- TOOLTIPS ---
 */
 
 .category-info {
@@ -327,6 +326,11 @@ a:active {
   border: none;
   color: white;
 }
+
+/*
+[data-msg] is the popup that appears when hovering over the tooltip.
+*/
+
 
 [data-msg] {
   position: relative;
@@ -587,7 +591,6 @@ input {
   margin-bottom: 30px;
 }
 
-
 .container-graph {
   display: flex;
   height: 300px;
@@ -657,7 +660,7 @@ input {
   background-image: linear-gradient(rgb(255, 88, 66), rgb(255, 51, 51));
   margin-top: 60px;
   text-align: center;
-  font-size: 12px ;
+  font-size: 12px;
   border-style: solid;
   margin-bottom: 60px;
 }
@@ -722,7 +725,7 @@ input {
 
 .item-contacts {
   flex-grow: 1;
-  max-height:fit-content;
+  max-height: fit-content;
   max-width: fit-content;
   background-color: rgba(255, 0, 0, 0);
   display: flex;
@@ -768,6 +771,7 @@ input {
   border-color: black;
   padding: 10px;
   padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .input-contacts {
