@@ -29,7 +29,7 @@ h4 {
 /*
 This is to remove text decoration from visited links (hyperlinks).
 If not, they appear as purple with an understroke, which ruins the layout of the page.
- */
+*/
 
 a:link {
   text-decoration: none;
@@ -83,6 +83,17 @@ a:active {
 --- DROPDOWN BUTTONS ---
 */
 
+/* 
+I remade the dropdown button three times - without using links the
+final time. I've learnt how to make one, and this is he latest version.
+*/
+
+/* 
+The dropdown menu consists of two buttons, the products and the
+menu buttons. They are in place for easy navigation as well as
+access to the About, Contacts and Documentation pages.
+*/
+
 .dropdown-info-button {
   background-color: rgb(27, 27, 27);
   padding: 10px;
@@ -113,7 +124,8 @@ a:active {
 }
 
 /* 
-Added some simple hover effects to the dropdown button.
+Added some simple hover effects to the dropdown button, so you
+know when you're hovering over it.
 */
 
 .dropdown-info-menu a:hover {
@@ -132,8 +144,9 @@ Added some simple hover effects to the dropdown button.
 }
 
 /* 
-Positioning the dropdown menu so it doesn't go off-screen.
- */
+Positioning the dropdown menus. I want them to be inline with the buttons and
+not go off-screen. Both the menus share the same y-level and x-level. 
+*/
 
 .dropdown-info:hover .dropdown-info-menu {
   display: block;
@@ -152,7 +165,9 @@ Positioning the dropdown menu so it doesn't go off-screen.
   margin: 0px;
 }
 
-/* ...  */
+/* 
+Same process, except it's for the products dropdown.
+*/
 
 .dropdown-products-button {
   color: rgb(255, 255, 255);
@@ -224,9 +239,10 @@ Positioning the dropdown menu so it doesn't go off-screen.
 */
 
 /* 
-Here lays some complicated stuff. 
-Some of the code is taken from CodingNepal, but it was more of a way for me to gain a deeper understanding of JavaScript.
-I'm confident in saying that I have learnt how to create an image slider without using a tutorial.
+Here lays some complicated stuff. Code is *partially* taken from CodingNepal, but
+using it was more of a way for me to gain a deeper understanding of JavaScript.
+I'm confident in saying that I have learnt how to create an image slider, and can
+replicate one without the use of a tutorial.
 */
 
 .div-image-wheel {
@@ -255,6 +271,10 @@ I'm confident in saying that I have learnt how to create an image slider without
   border-style: solid;
   border-radius: 5px;
 }
+
+/*
+Overflow prevents the images from going outside the container.
+*/
 
 .wrapper .carousel {
   white-space: nowrap;
@@ -303,6 +323,11 @@ I'm confident in saying that I have learnt how to create an image slider without
   outline: none;
 }
 
+/*
+Simple animation I made to fill the importance of the button
+and to make the website pop a bit more.
+*/
+
 .item-browse:hover {
   box-shadow: inset 1480px 0 0 0 rgb(255, 51, 51);
   color: rgb(0, 0, 0);
@@ -311,6 +336,12 @@ I'm confident in saying that I have learnt how to create an image slider without
 
 /*
 --- TOOLTIPS ---
+*/
+
+/*
+More about the process of the implementation of tooltips can be seen
+in the Documentation section. This also applies to some other
+complicated stuff.
 */
 
 .category-info {
@@ -333,7 +364,6 @@ Some of this is taken from web, but adjusted to make it work in my situation.
 Link unavailable due to me using numerous sources, however code wasn't directly copied.
 */
 
-
 [data-msg] {
   position: relative;
   margin-left: 10px;
@@ -345,6 +375,11 @@ Link unavailable due to me using numerous sources, however code wasn't directly 
   line-height: 20px;
   cursor: pointer;
 }
+
+/*
+Some of this was taken from random sources online, especially when it came
+to making the little arrow at the bottom.
+*/
 
 [data-msg]:focus:before,
 [data-msg]:hover::before {
@@ -373,7 +408,7 @@ Link unavailable due to me using numerous sources, however code wasn't directly 
 }
 
 /*
---- CONTACT INFORMATION (FOOTER) ---
+--- FOOTER ---
 */
 
 .div-footer {
@@ -401,6 +436,11 @@ Link unavailable due to me using numerous sources, however code wasn't directly 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
+/*
+Input is for the send button underneath "Nyhetsbrev". I left it here
+despite also using it in my Contacts page because it applies to both.
+*/
 
 input {
   height: 20px;
@@ -444,6 +484,11 @@ input {
 
 /*
 --- GENRES HOMEPAGE ---
+*/
+
+/*
+From this point and on I mostly used CSS stuff I already used, so a lot of
+this might look the same.
 */
 
 .container-genres {
@@ -500,6 +545,10 @@ input {
 
 /*
 --- PRODUCTS ---
+*/
+
+/*
+This applies to all the product pages.
 */
 
 .container-products {
@@ -592,6 +641,12 @@ input {
   border-radius: 100px;
   margin-bottom: 30px;
 }
+
+/*
+As previously mentioned, this graph mostly serves as a showcase of my
+knowledge with Flexbox, seeing as something like this isn't present anywhere
+else in the website.
+*/
 
 .container-graph {
   display: flex;
@@ -700,6 +755,11 @@ input {
   margin-inline: 20px;
 }
 
+/*
+I added a little animation for when you hover over the pictures.
+A little easter egg I suppose. The images just spin.
+*/
+
 .img-founders {
   width: 300px;
   height: 300px;
@@ -707,6 +767,11 @@ input {
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.img-founders:hover {
+  transform: rotate(360deg);
 }
 
 /* 
@@ -809,9 +874,26 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(27, 27, 27);
+  border-style: solid;
+  width: 85%;
+  padding: 30px;
+  margin: auto;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .item-documentation {
-  height: 40px;
-  margin-bottom: 10px;
+  height: fit-content;
+  background-color: rgb(255, 51, 51);
+  border-radius: 10px;
+  border-style: solid;
+  width: 100%;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 5px;
 }

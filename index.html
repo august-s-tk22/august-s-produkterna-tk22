@@ -4,12 +4,12 @@
 
   <link rel="stylesheet" href="/css/styles.css" />
   <script src="/javascript/slider.js" defer></script>
-  <link rel="icon" href="/img/stereohut-cut-logo.png">
+  <link rel="icon" href="/img/stereohut-cut-logo.png" />
 </head>
 
 <body>
-  <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated seeing as it's the
-        site's crown and therefore should be easy to use. -->
+  <!-- Simple nav bar with simple dropdown button. Didn't wanna make this too complicated 
+  seeing as it's the 'site's crown' and therefore should be easy to use. -->
 
   <nav class="nav-stereohut">
     <a href="/index.html"
@@ -55,7 +55,8 @@
   </nav>
 
   <!-- Image wheel implemented with the help of JavaScript.
-    Code partially taken from here https://www.youtube.com/watch?v=7HPsdVQhpRw&ab_channel=CodingNepal -->
+  Code partially taken from here https://www.youtube.com/watch?v=7HPsdVQhpRw&ab_channel=CodingNepal.
+  You can find more about how I interpreted this code in the Documentation html. -->
 
   <div class="div-image-wheel">
     <h2><b>Nya och exklusiva skivor!</b></h2>
@@ -64,7 +65,9 @@
   <div class="container-wheel">
     <div class="wrapper">
       <div class="carousel">
-        <!-- These images are off-screen. Prevents others from cutting off. -->
+        <!-- These images are off-screen. Prevents others from cutting off.
+        I found this to be the easiest method to fix an issue I had with the 
+        image slider. -->
 
         <img src="/img/albums/featured-albums/kid-a.png" alt="" />
         <img src="/img/albums/featured-albums/igor.png" alt="" />
@@ -98,7 +101,10 @@
     </div>
   </div>
 
-  <!-- Buttons that take you to different categories surrounding the products. -->
+  <!-- This is the button that leads you to the products page. The class is called
+  "container-buttons" because it used to be multiple buttons that take you to different
+  pages, but I decided to remove them and settle for one. I kept it in as kind of an 
+  easter egg. May the button select page be missed. -->
 
   <div class="container-buttons">
     <a href="/html/genres-main.html" class="item-browse">
@@ -107,12 +113,13 @@
         class="category-info"
         data-msg="Här kan du bläddra igenom vår samling av vinyler, sorterade efter deras genre."
       >
-        <img src="./img/question-mark-icon.png">
+        <img src="./img/question-mark-icon.png" />
       </button>
     </a>
   </div>
 
-  <!-- Footer. Inspiration taken from https://www.bengans.se/ -->
+  <!-- Footer. Speaks for itself. More about the process can be found in Documentation.
+  Inspiration was taken from https://www.bengans.se/. Only inspiration; no code whatsoever. -->
 
   <div class="div-footer" name="footer" id="footer">
     <div class="container-footer">
@@ -141,6 +148,8 @@
       <div class="item-footer">
         <h4 class="header-footer">Bli medlem</h4>
         <h4 class="text-footer">
+          <!-- This doesn't make sense at all but... 
+          the footer looks nicer with it so I kept it in. -->
           <br /><br />
           Vill du bli medlem hos oss? <br />
           Köp produkter för 1000 kr för <br />
@@ -164,3 +173,7 @@
     </div>
   </div>
 </body>
+
+<!-- Also, please note I didn't comment the same comment multiple times. If I commented
+on a section that can be seen in all of the different pages, then it's most likely only
+commented here. However, CSS and JS comments are an exception. -->
